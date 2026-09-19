@@ -88,5 +88,3 @@ Placeholder filenames for locally stored, appropriately licensed images:
 ### Fonts
 
 System UI font stack; no external fonts used.
-
-### Borrowed Content
