@@ -1,0 +1,327 @@
+/* css/styles.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #1f2933;
+  background-color: #f7fafc;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: #0b7285;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Header & Navigation (Flexbox) */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #0b7285;
+  color: #f7fafc;
+}
+
+.logo-tagline {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #f7fafc;
+}
+
+.tagline {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: #f7fafc;
+  font-weight: 500;
+}
+
+/* Hero (Flexbox) */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+  background-color: #e3f2fd;
+}
+
+.hero-content {
+  flex: 1 1 280px;
+}
+
+.hero-content h1 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.hero-image {
+  flex: 1 1 260px;
+  margin: 0;
+}
+
+.hero-image figcaption {
+  font-size: 0.85rem;
+  color: #52606d;
+  margin-top: 0.5rem;
+}
+
+/* Button style */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #0b7285;
+  color: #f7fafc;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #08546b;
+  text-decoration: none;
+}
+
+/* Events grid (CSS Grid) */
+.events-section {
+  padding: 2rem 1.5rem;
+}
+
+.events-section h2 {
+  margin-top: 0;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.event-card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #d8e2ec;
+  padding: 1rem;
+}
+
+.event-card figure {
+  margin: 0 0 0.75rem;
+}
+
+.event-card h3 {
+  margin: 0.5rem 0;
+}
+
+.event-meta {
+  font-size: 0.9rem;
+  color: #52606d;
+}
+
+.event-description {
+  margin: 0.75rem 0;
+}
+
+.details-link {
+  font-weight: 600;
+}
+
+/* Wider cards using grid column span */
+.event-card.wide {
+  grid-column: span 2;
+}
+
+/* About section */
+.about-section {
+  padding: 2rem 1.5rem;
+  background-color: #ffffff;
+}
+
+.about-section h2 {
+  margin-top: 0;
+}
+
+.benefits-list {
+  margin-top: 1rem;
+  padding-left: 1.25rem;
+}
+
+/* Footer (Flexbox) */
+.site-footer {
+  padding: 1.5rem;
+  background-color: #0b7285;
+  color: #f7fafc;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer a {
+  color: #f7fafc;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Event page intro */
+.event-intro {
+  padding: 2rem 1.5rem 1rem;
+  background-color: #e3f2fd;
+}
+
+.event-intro h1 {
+  margin-top: 0;
+}
+
+.event-intro-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.event-hero-image {
+  flex: 1 1 260px;
+  margin: 0;
+}
+
+.event-intro-meta {
+  flex: 1 1 260px;
+}
+
+.event-category {
+  font-weight: 600;
+}
+
+/* Event layout (CSS Grid) */
+.event-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+}
+
+.event-main,
+.event-sidebar {
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #d8e2ec;
+  padding: 1.5rem;
+}
+
+.event-main h2,
+.event-main h3 {
+  margin-top: 0;
+}
+
+.sidebar-btn {
+  width: 100%;
+  text-align: center;
+}
+
+/* Related events (Flexbox with wrapping) */
+.related-events {
+  padding: 2rem 1.5rem;
+  background-color: #ffffff;
+}
+
+.related-events h2 {
+  margin-top: 0;
+}
+
+.related-events-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.related-card {
+  flex: 1 1 220px;
+  border-radius: 6px;
+  border: 1px solid #d8e2ec;
+  padding: 1rem;
+  background-color: #f7fafc;
+}
+
+/* Responsive design: media queries */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+  }
+
+  .event-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .event-sidebar {
+    margin-top: 1rem;
+  }
+
+  .event-card.wide {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 1.5rem 1rem;
+  }
+
+  .events-section,
+  .about-section,
+  .event-intro,
+  .event-layout,
+  .related-events {
+    padding: 1.5rem 1rem;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
